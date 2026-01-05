@@ -2,6 +2,7 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu – KRETA</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -19,17 +20,110 @@
 </nav>
 
 <section class="content">
-    <h2>Menu</h2>
+    <h2 class="menu-title">Nasze menu</h2>
 
-    <h3>🥗 Przystawki</h3>
-    <p>Sałatka grecka – 24 zł</p>
+    <!-- PRZYSTAWKI -->
+    <div class="menu-section">
+        <h3>🥗 Przystawki</h3>
 
-    <h3>🍖 Dania główne</h3>
-    <p>Gyros – 32 zł</p>
-    <p>Moussaka – 34 zł</p>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <img src="zdjecia/salatkaGrecka.jpg" alt="Sałatka grecka">
+                <h4>Sałatka grecka</h4>
+                <p>Pomidor, ogórek, feta, oliwki</p>
+                <span>24 zł</span>
+            </div>
 
-    <h3>🧁 Desery</h3>
-    <p>Baklava – 18 zł</p>
+            <div class="menu-item">
+                <img src="zdjecia/tzatziki.jpg" alt="Tzatziki">
+                <h4>Tzatziki</h4>
+                <p>Jogurt grecki, ogórek, czosnek</p>
+                <span>18 zł</span>
+            </div>
+
+            <div class="menu-item">
+                <img src="zdjecia/dolmades.jpg" alt="Dolmades">
+                <h4>Dolmades</h4>
+                <p>Liście winogron z ryżem</p>
+                <span>20 zł</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- DANIA GŁÓWNE -->
+    <div class="menu-section">
+        <h3>🍖 Dania główne</h3>
+
+        <div class="menu-grid">
+            <div class="menu-item">
+                <img src="zdjecia/gyros.jpg" alt="Gyros">
+                <h4>Gyros</h4>
+                <p>Mięso, pita, frytki, tzatziki</p>
+                <span>32 zł</span>
+            </div>
+
+            <div class="menu-item">
+                <img src="zdjecia/mussaka.jpg" alt="Moussaka">
+                <h4>Moussaka</h4>
+                <p>Bakłażan, mięso, beszamel</p>
+                <span>34 zł</span>
+            </div>
+
+            <div class="menu-item">
+                <img src="zdjecia/souvlaki.jpg" alt="Souvlaki">
+                <h4>Souvlaki</h4>
+                <p>Grillowane szaszłyki mięsne</p>
+                <span>36 zł</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- DESERY -->
+    <div class="menu-section">
+        <h3>🧁 Desery</h3>
+
+        <div class="menu-grid">
+            <div class="menu-item">
+                <img src="zdjecia/baklava.jpg" alt="Baklava">
+                <h4>Baklava</h4>
+                <p>Ciasto filo, orzechy, miód</p>
+                <span>18 zł</span>
+            </div>
+
+            <div class="menu-item">
+                <img src="zdjecia/jogurtG.jpg" alt="Jogurt grecki">
+                <h4>Jogurt grecki z miodem</h4>
+                <p>Jogurt, miód, orzechy</p>
+                <span>16 zł</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- NAPOJE -->
+    <div class="menu-section">
+        <h3>🍷 Napoje</h3>
+
+        <div class="menu-grid">
+            <div class="menu-item no-image">
+                <h4>Wino greckie</h4>
+                <p>Białe / czerwone</p>
+                <span>22 zł</span>
+            </div>
+
+            <div class="menu-item no-image">
+                <h4>Ouzo</h4>
+                <p>Tradycyjny alkohol anyżowy</p>
+                <span>18 zł</span>
+            </div>
+
+            <div class="menu-item no-image">
+                <h4>Lemoniada</h4>
+                <p>Domowa</p>
+                <span>10 zł</span>
+            </div>
+        </div>
+    </div>
+
 </section>
 
 <footer>
