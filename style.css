@@ -1,0 +1,220 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #0a1f44;
+
+    background-image: url("SantoriniTlo.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+
+    background-image: url("SantoriniTlo.png");
+    background-size: cover;
+    background-position: center;
+
+    filter: blur(6px);
+    transform: scale(1.1);
+    z-index: -1;
+}
+
+nav {
+    background-color: rgba(30, 144, 255, 0.9);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+}
+
+.logo {
+    color: white;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a.active,
+nav a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    height: 70vh;
+    background: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)),
+    url("../images/hero.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding-top: 150px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #1e90ff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.content {
+    padding: 40px;
+    max-width: 800px;
+    margin: 40px auto;
+
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 10px;
+}
+
+footer {
+    text-align: center;
+    background-color: #0a1f44;
+    color: white;
+    padding: 15px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 450px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input, select, textarea {
+    padding: 8px;
+    font-size: 14px;
+}
+
+button {
+    background-color: #1e90ff;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0a1f44;
+}
+
+#message {
+    margin-top: 20px;
+    font-weight: bold;
+    color: green;
+}
+.success-box {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    align-items: flex-end;
+    gap: 15px;
+    z-index: 999;
+}
+
+.kret {
+    width: 180px;
+}
+
+.speech-bubble {
+    background: white;
+    padding: 15px 20px;
+    border-radius: 15px;
+    max-width: 220px;
+    font-weight: bold;
+    position: relative;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* ogonek dymka */
+.speech-bubble::after {
+    content: "";
+    position: absolute;
+    left: -15px;
+    bottom: 20px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent white transparent transparent;
+}
+/* układ: formularz + kret */
+.reservation-layout {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+/* kret + dymek */
+.success-box-inline {
+    display: none; /* pokazuje JS */
+    position: relative;
+}
+
+/* kret */
+.kret {
+    width: 220px;
+}
+
+/* dymek przy ustach */
+.speech-bubble {
+    position: absolute;
+    top: 70px;        /* wysokość ust – można regulować */
+    left: 240px;      /* ⬅️ DYMek PO PRAWEJ STRONIE KRETA */
+
+    background: white;
+    padding: 15px 20px;
+    border-radius: 15px;
+    width: 220px;
+    font-weight: bold;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.speech-bubble::after {
+    content: "";
+    position: absolute;
+    left: -15px;     /* ogonek z LEWEJ strony dymka */
+    top: 25px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent white transparent transparent;
+}
+.page {
+    min-height: 100vh;          /* cała wysokość ekranu */
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1;                    /* rozpycha stronę */
+}
+
+footer {
+    background-color: #0a1f44;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}

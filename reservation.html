@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Rezerwacja – KRETA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="page">
+
+    <nav>
+        <h1 class="logo">KRETA</h1>
+        <ul>
+            <li><a href="index.html">Strona główna</a></li>
+            <li><a href="about.html">O nas</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="location.html">Lokalizacja</a></li>
+            <li><a href="reservation.html" class="active">Rezerwacja</a></li>
+        </ul>
+    </nav>
+
+    <!-- CONTENT -->
+    <section class="content">
+        <h2>Rezerwacja stolika</h2>
+
+        <div class="reservation-layout">
+
+            <form id="reservationForm">
+                <label for="people">Liczba osób:</label>
+                <select id="people" required>
+                    <option value="">-- wybierz --</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5+</option>
+                </select>
+
+                <label for="phone">Numer telefonu:</label>
+                <input type="tel" id="phone" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+
+                <label for="comment">Komentarz:</label>
+                <textarea id="comment"></textarea>
+
+                <button type="submit">Wyślij rezerwację</button>
+            </form>
+
+            <div id="successBox" class="success-box-inline">
+                <div class="speech-bubble">
+                    Rezerwacja się powiodła! 🥳<br>
+                    Do zobaczenia w KRECIE!
+                </div>
+                <img src="kret.png" alt="Kret KRETA" class="kret">
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER MUSI BYĆ TUTAJ -->
+    <footer>
+        <p>© 2026 Restauracja KRETA</p>
+    </footer>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
