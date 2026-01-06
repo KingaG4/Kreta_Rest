@@ -3,35 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KRETA – Restauracja Grecka</title>
+    <title>O nas – KRETA</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 <div class="page">
 
-<nav>
-    <h1 class="logo">KRETA</h1>
-    <ul>
-        <li><a href="index.html" class="active">Strona główna</a></li>
-        <li><a href="about.html">O nas</a></li>
-        <li><a href="menu.html">Menu</a></li>
-        <li><a href="location.html">Lokalizacja</a></li>
-        <li><a href="reservation.html">Rezerwacja</a></li>
+    <!-- NAWIGACJA -->
+    <nav>
+        <h1 class="logo">KRETA</h1>
+        <ul>
+            <li><a href="index.html">Strona główna</a></li>
+            <li><a href="about.html" class="active">O nas</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="location.html">Lokalizacja</a></li>
+            <li><a href="reservation.html">Rezerwacja</a></li>
+        </ul>
+    </nav>
 
-    </ul>
-</nav>
+    <!-- TREŚĆ O NAS -->
+    <section class="content about-section">
 
-<header class="hero">
-    <h2>Smak prawdziwej Grecji</h2>
-    <p>Autentyczna kuchnia prosto z Krety</p>
-    <a href="menu.html" class="btn">Zobacz menu</a>
-</header>
+        <h2 class="about-title">O nas</h2>
 
-<footer>
-    <p>© 2026 Restauracja KRETA</p>
-    <p>! Kinga Głowacka & Natalia Michalak & Kacper Czarnecki !</p>
-</footer>
+        <div class="about-layout">
+
+            <!-- KARTA Z TEKSTEM -->
+            <div class="about-box">
+                <p>
+                    Restauracja <strong>KRETA</strong> powstała z miłości do kuchni greckiej
+                    oraz śródziemnomorskiego stylu życia.
+                    Inspirujemy się słoneczną wyspą Kreta, gdzie jedzenie to nie tylko posiłek,
+                    ale także czas spędzony razem w miłej atmosferze.
+                </p>
+
+                <p>
+                    W naszej kuchni stawiamy na <strong>świeże składniki</strong>,
+                    aromatyczne przyprawy oraz tradycyjne greckie receptury.
+                    Oliwa z oliwek, warzywa, sery i zioła stanowią podstawę naszych dań.
+                </p>
+
+                <p>
+                    Chcemy, aby każdy gość poczuł się u nas jak na wakacjach w Grecji –
+                    bez pośpiechu, w przyjaznym otoczeniu i z doskonałym jedzeniem.
+                </p>
+
+                <p class="about-highlight">
+                    Zapraszamy do restauracji <strong>KRETA</strong> – miejsca,
+                    w którym smak, tradycja i gościnność spotykają się przy jednym stole.
+                </p>
+            </div>
+
+            <!-- KRET -->
+            <div class="about-mascot">
+                <img src="zdjecia/kret.png" alt="Kret KRETA">
+
+                <div class="about-quote">
+                    Poznaj naszą historię
+                </div>
+            </div>
+
+    </section>
+
+
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 Restauracja KRETA</p>
+        <p>Kinga Głowacka • Natalia Michalak • Kacper Czarnecki</p>
+    </footer>
+
 </div>
-<script src="script.js"></script>
 </body>
 </html>
