@@ -4,7 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rezerwacja – KRETA</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+
 </head>
 <body>
 
@@ -29,7 +36,7 @@
 
             <form id="reservationForm">
                 <label for="people">Liczba osób:</label>
-                <select id="people" required>
+                <select id="people" name="people" required>
                     <option value="">-- wybierz --</option>
                     <option>1</option>
                     <option>2</option>
@@ -39,13 +46,13 @@
                 </select>
 
                 <label for="phone">Numer telefonu:</label>
-                <input type="tel" id="phone" required>
+                <input type="tel" id="phone" name="phone" required>
 
                 <label for="email">Email:</label>
-                <input type="email" id="email" required>
+                <input type="email" id="email" name="email" required>
 
                 <label for="comment">Komentarz:</label>
-                <textarea id="comment"></textarea>
+                <textarea id="comment" name="comment"></textarea>
 
                 <button type="submit">Wyślij rezerwację</button>
             </form>
@@ -64,6 +71,7 @@
     <!-- FOOTER MUSI BYĆ TUTAJ -->
     <footer>
         <p>© 2026 Restauracja KRETA</p>
+        <p>Kinga Głowacka • Natalia Michalak • Kacper Czarnecki</p>
     </footer>
 
 </div>

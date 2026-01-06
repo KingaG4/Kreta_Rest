@@ -8,8 +8,10 @@ document.getElementById("reservationForm")?.addEventListener("submit", function(
     // reset formularza
     this.reset();
 
-    // opcjonalnie: schowaj po 6 sekundach
+    // po 10 sekundach ukryj z fade
     setTimeout(() => {
-        box.style.display = "none";
-    }, 6000);
+        box.classList.remove("show");
+        // dodatkowo po animacji opacity ustaw display:none
+        setTimeout(() => box.style.display = "none", 1000); // 500ms = czas fade-out
+    }, 3000); // <- czas widoczności 10 sekund
 });
